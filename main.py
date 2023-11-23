@@ -9,8 +9,8 @@ def stocks(arr):
             if max_price< arr[i]-min_price:
                 max_price=arr[i]-min_price
 
-    return max_price
+    return max_price, min_price
 
-arr=[4,3,2,1,11]
+arr=[4,3,8,1,11]
 
 print(stocks(arr))
