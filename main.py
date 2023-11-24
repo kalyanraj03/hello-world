@@ -12,6 +12,10 @@ def stocks(arr):
 
     return max_price, min_price # return result called max_price
 
-arr=[4,3,8,1,11]
+n= int(input("Enter the length of the array"))
+
+arr=[]
+for i in range(n):
+    arr.append(int(input(f"Enter the {i}th day price of the stock")))
 
 print(stocks(arr))
